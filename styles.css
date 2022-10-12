@@ -119,6 +119,7 @@ p .small {
     gap: 10px;
     margin: 24px 48px;
     width: 860px;
+    flex: 1;
 }
 
 .base {
@@ -137,9 +138,38 @@ p .small {
     text-align: center;
 }
 
+.last {
+    background-color: #3882F6;
+    border-radius: 5px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 48px;
+}
+
+.call {
+    display: flex;
+    flex-direction: column;
+}
+.action {
+    display: flex;
+    color: white;
+}
+
+.up {
+    font-weight: 900;
+}
+
+.click {
+    padding: 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    align-items: center;
+}
+
 .footer {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    
+    align-items: flex-end;   
 }
