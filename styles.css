@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 0 48px;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.link {
+    display: flex;
+   
+    flex-wrap: wrap;
+    gap: 10px;
+}
