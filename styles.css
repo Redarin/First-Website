@@ -74,19 +74,67 @@ h1, p {
 .main {
     display: flex;
     flex-direction: column;
+    margin: 24px 48px;
+    gap: 20px;
     
-    align-items: center;
-    flex: 1;
+    
 }
 
-.image {
-    width: 200px;
-    height: 100px;
+.name {
+    text-align: center;
 }
 
 .attributes {
     display: flex;
+    justify-content: center;
     gap: 20px;
+}
+
+.thumb {
+    width: 200px;
+    height: auto;
+}
+
+p .small {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.read {
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: space between;
+    align-self: center;
+    gap: 10px;
+    margin: 24px 48px;
+    width: 860px;
+}
+
+.base {
+    display: flex;
+    flex: 1;
+    align-self: center;
+}
+
+.sign {
+    display: flex;
+    flex: 1;
+    align-self: flex-end;
+}
+
+.comment {
+    text-align: center;
 }
 
 .footer {
