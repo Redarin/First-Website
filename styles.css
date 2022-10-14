@@ -2,6 +2,7 @@ html,
 body,
 .container {
      height: 100%;
+     font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -25,12 +26,8 @@ img {
     overflow-y: auto;
 }
 
-.header {
-    flex: 0 0 auto;
-}
-
 .logo {
-    max-width: 200px;
+    max-width: 100px;
     height: auto;
 }
 
@@ -50,15 +47,15 @@ button {
     border: 0;
     padding: 0;
     border-radius: 7px;
-    background-color: #3882F6;
-    color: #F9FaF8;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .right img {
     object-fit: contain;
 }
 
-/* .awesome, */
+.awesome,
 .information,
 .quote,
 .call {
@@ -72,7 +69,7 @@ button {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 50px 100px;
+    padding: 50px 100px 0px 100px
 }
 
 ul,.link {
@@ -92,9 +89,6 @@ ul,.link {
 
 .left,
 .right {
-    background: rgba(167, 140, 20, 0.425);
-    padding: 20px;
-    border-radius: 6px;
     box-sizing: border-box;
 }
 
@@ -119,6 +113,54 @@ ul,.link {
     }
 
 }
+
+.header,
+.awesome,
+.footer {
+    background-color: #1F2937;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FaF8;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+h3,
+a,
+.footer {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 36px;
+}
+
+.quote>*:first-child {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.quote>*:last-child {
+    font-weight: 700;
+}
+
+button,
+.call {
+    background-color: #3882F6;
+    color: #F9FaF8;
+}
+
+
 
 
 
