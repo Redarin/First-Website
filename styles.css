@@ -47,16 +47,13 @@ button {
     flex-shrink: 0;
     align-self: flex-end;
 }
-.right {
-    max-width: 300px;
-}
 
 .right img {
     object-fit: contain;
 
 }
 
-.awesome,
+/* .awesome, */
 .information,
 .quote,
 .call {
@@ -82,10 +79,41 @@ ul,.link {
 }
 
 .awesome {
+    padding: 50px 100px;
     display: flex;
     justify-content: space-between;
-    gap: 25px;
-    padding: 50px 100px;
+    flex-wrap: wrap-reverse;
 }
+
+.left,
+.right {
+    background: rgba(167, 140, 20, 0.425);
+    padding: 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.col-50 {
+    width: calc(50% - 30px);
+}
+
+@media screen and (max-width:800px) {
+
+    .awesome {
+        gap: 10px;
+    }
+    
+    .col-50 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .col-50 h1,
+    h3 {
+        text-align: center;
+    }
+
+}
+
 
 
