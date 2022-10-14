@@ -4,8 +4,18 @@ body,
      height: 100%;
 }
 
- body {
-    overflow: hidden;
+img {
+    width: 100%;
+    height: auto;
+}
+
+ /* body { */
+    /* overflow: hidden; */
+ /* } */
+
+ h1,
+ h3 {
+    margin: 0;
  }
 
 .container {
@@ -18,9 +28,34 @@ body,
     flex: 0 0 auto;
 }
 
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
 .main {
     overflow-y: auto;
 }
+
+.left {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    height: 30px;
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+.right {
+    max-width: 300px;
+}
+
+.right img {
+    object-fit: contain;
+
+}
+
 .awesome,
 .information,
 .quote,
@@ -29,12 +64,13 @@ body,
 }
 
 .footer {
-    flex 0 0 auto;
+    flex: 0 0 auto;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    padding: 50px 100px;
 }
 
 ul,.link {
@@ -48,9 +84,8 @@ ul,.link {
 .awesome {
     display: flex;
     justify-content: space-between;
+    gap: 25px;
+    padding: 50px 100px;
 }
 
-.left {
-    display: flex;
-    flex-direction: column;
-}
+
