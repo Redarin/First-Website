@@ -13,10 +13,6 @@ img {
     height: auto;
 }
 
- /* body { */
-    /* overflow: hidden; */
- /* } */
-
  h1,
  h3,
  h2,
@@ -38,6 +34,7 @@ img {
 
 .main {
     overflow-y: auto;
+    margin: 0;
 }
 
 .left {
@@ -74,7 +71,11 @@ button {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 50px 100px 0px 100px
+    padding: 50px 100px 0px 100px;
+}
+
+ul {
+    padding: 0;
 }
 
 ul,.link {
@@ -86,6 +87,7 @@ ul,.link {
 }
 
 .awesome {
+    margin: -1px;
     padding: 50px 100px;
     display: flex;
     justify-content: space-between;
@@ -155,14 +157,25 @@ h2 {
 }
 
 .footer {
-    padding: 25px;
+    padding: 15px;
     text-align: center;
 }
 
 @media screen and (max-width:800px) {
 
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0px 0px 0px;
+    }
+
     .awesome {
         gap: 10px;
+        padding: 15px 50px 50px 50px;
+    }
+
+    .information {
+        padding: 50px;
     }
     
     .col-50 {
@@ -179,7 +192,11 @@ h2 {
 
     .icon {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
+    }
+
+    .quote {
+        align-items: center;
     }
 
     .call {
@@ -187,7 +204,12 @@ h2 {
         align-items: center;
         text-align: center;
         gap: 10px;
-        padding: 25px 50px;
+        margin: 50px;
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 5px;
     }
 
 }
@@ -242,6 +264,22 @@ button,
 
 .call button {
     border: 2px solid white;
+}
+
+@media screen and (max-width:800px) {
+    .quote {
+        padding: 15px 0;
+    }
+
+    .quote>*:first-child {
+        font-size: 24px;
+    }
+
+    .quote>*:last-child {
+        font-size: 12px;
+    }
+
+
 }
 
 
