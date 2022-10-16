@@ -87,7 +87,7 @@ ul,.link {
 }
 
 .awesome {
-    margin: -1px;
+    margin-top: -1px;
     padding: 50px 100px;
     display: flex;
     justify-content: space-between;
