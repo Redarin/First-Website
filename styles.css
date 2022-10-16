@@ -139,6 +139,15 @@ h2 {
     padding: 0px 50px;
 }
 
+.call {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 100px;
+    padding: 50px 100px;
+    border-radius: 10px;
+
+}
+
 @media screen and (max-width:800px) {
 
     .awesome {
@@ -160,6 +169,14 @@ h2 {
     .icon {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .call {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 25px 50px;
     }
 
 }
@@ -212,6 +229,9 @@ button,
     color: #F9FaF8;
 }
 
+.call button {
+    border: 2px solid white;
+}
 
 
 
