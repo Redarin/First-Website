@@ -148,6 +148,15 @@ h2 {
 
 }
 
+.action>*:first-child {
+    font-weight: 700;
+}
+
+.footer {
+    padding: 25px;
+    text-align: center;
+}
+
 @media screen and (max-width:800px) {
 
     .awesome {
