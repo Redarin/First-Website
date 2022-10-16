@@ -83,7 +83,6 @@ ul,.link {
     list-style: none;
     text-decoration: none;
     gap: 20px;
-
 }
 
 .awesome {
@@ -193,6 +192,7 @@ h2 {
     .icon {
         flex-direction: column;
         gap: 20px;
+        padding: 0px 100px;
     }
 
     .quote {
@@ -278,8 +278,6 @@ button,
     .quote>*:last-child {
         font-size: 12px;
     }
-
-
 }
 
 
