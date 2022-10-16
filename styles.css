@@ -15,7 +15,9 @@ img {
  /* } */
 
  h1,
- h3 {
+ h3,
+ h2,
+ p {
     margin: 0px;
     flex: 1;
  }
@@ -96,6 +98,36 @@ ul,.link {
     width: calc(50% - 30px);
 }
 
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 200px;
+    gap: 20px;
+}
+
+.icon {
+    display: flex;
+    gap: 25px;
+}
+
+.thumb {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.thumb img {
+    object-fit: contain;
+}
+
+.thumb p,
+h2 {
+    text-align: center;
+}
+
 @media screen and (max-width:800px) {
 
     .awesome {
@@ -105,11 +137,18 @@ ul,.link {
     .col-50 {
         width: 100%;
         justify-content: center;
+        align-items: center;
+        gap: 15px;
     }
 
     .col-50 h1,
     h3 {
         text-align: center;
+    }
+
+    .icon {
+        flex-direction: column;
+        gap: 10px;
     }
 
 }
